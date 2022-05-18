@@ -9,7 +9,6 @@
 body {
     background-image: url(../img/fundo.svg);
     background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /*=========== CABEÇALHO ===========*/
@@ -25,12 +24,6 @@ body {
     display: flex;
     text-align: center;
     justify-content: center;
-}
-
-#menu1 p {
-    display: flex;
-    align-items: center;
-    color: #92255C;
 }
 
 #menu1 img {
