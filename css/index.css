@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../img/fundo.svg);
+    background-size: cover;
+}
+
+/*=========== CABEÇALHO ===========*/
+
+#header {
+    display: flex;
+    height: 80px;
+}
+
+#menu1 {
+    width: 40vw;
+    /* background-color: #00ffff58; */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+#menu1 p {
+    display: flex;
+    align-items: center;
+    color: #92255C;
+}
+
+#menu1 img {
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+#menu2 {
+    width: 60vw;
+    /* background-color: #03cd1758; */
+}
+
+#navbar,
+#navbar ul {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#menu2 li,
+#menu2 a {
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    font-family: 'Pathway Gothic One', sans-serif;
+}
+
+#menu2 a {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #92255C;
+    font-size: 25px;
+    font-weight: 900;
+}
+
+/*=========== CORPO ===========*/
+
+#hello {
+    background-image: linear-gradient(to left, #8d2985, #ed008d);
+    font-size: 110px;
+    display: inline-block;
+    line-height: 120px;
+    font-family: 'Noto Sans JP', sans-serif;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: fixed;
+    top: 220px;
+    left: 42vw;
+}
+
+#rosquinha{
+    width: 40vw;
+    min-width: 400px;
+    position: fixed;
+    top: 25vh;
+    /* bottom: 30vh; */
+}
+
+/*=========== RODAPÉ ===========*/
+
+#footer {
+    /* background-color: #00ffff48; */
+    width: 450px;
+    position: fixed;
+    left: 43vw;
+    bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#btn1 {
+    display: flex;
+    border: solid 2px #c37f8f;
+}
+
+#btn1 a {
+    text-decoration: none;
+    color: #be2d70;
+    font-weight: 900;
+    font-family: arial, sans-serif;
+    padding: 10px 20px;
+    letter-spacing: 3px;
+}
+
+#btn2 {
+    display: flex;
+    background-image: linear-gradient(to left, #842983, #ec0383);
+    padding: 0 20px;
+    color: white;
+    align-items: center;
+}
+
+#btn2 span {
+    font-size: 20px;
+}
+
+#btn2 img {
+    width: 30px;
+    margin-right: 5px;
+}
