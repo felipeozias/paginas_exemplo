@@ -80,7 +80,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: fixed;
-    top: 220px;
+    top: 40vh;
     left: 42vw;
 }
 
@@ -99,7 +99,7 @@ body {
     width: 450px;
     position: fixed;
     left: 43vw;
-    bottom: 200px;
+    top: 80vh;
     display: flex;
     justify-content: space-between;
 }
