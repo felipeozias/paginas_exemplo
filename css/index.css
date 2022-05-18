@@ -9,6 +9,7 @@
 body {
     background-image: url(../img/fundo.svg);
     background-size: cover;
+    background-repeat: no-repeat;
 }
 
 /*=========== CABEÇALHO ===========*/
@@ -126,8 +127,10 @@ body {
     align-items: center;
 }
 
-#btn2 span {
+#title {
     font-size: 20px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    font-weight: normal;
 }
 
 #btn2 img {
