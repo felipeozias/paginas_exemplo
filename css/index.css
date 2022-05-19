@@ -4,11 +4,28 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    z-index: 1;
 }
 
 body {
-    background-image: url(../img/fundo.svg);
-    background-size: cover;
+    background-color: #feebe7;
+
+}
+
+#fundotop {
+    width: 70vw;
+    position: fixed;
+    top: 0;
+    right: 20px;
+    z-index: 0;
+}
+
+#fundobottom {
+    width: 60vw;
+    position: fixed;
+    bottom: 0;
+    right: 20px;
+    z-index: 0;
 }
 
 /*=========== CABEÇALHO ===========*/
@@ -17,27 +34,29 @@ body {
 }
 
 #header {
+    width: 100vw;
+    height: 130px;
     display: flex;
-    height: 80px;
+    /* background-color: #f21c23; */
 }
 
-#menu1 {
-    width: 40vw;
-    /* background-color: #00ffff58; */
-    display: flex;
+#header_l {
+    width: 34%;
+    height: 100%;
     text-align: center;
-    justify-content: center;
+    /* background-color: #f3f715a5; */
 }
 
-#menu1 img {
-    width: 150px;
-    height: 40px;
-    margin-top: 20px;
+#header_l img {
+    width: 180px;
+    height: 45px;
+    margin-top: 30px;
 }
 
-#menu2 {
-    width: 60vw;
-    /* background-color: #03cd1758; */
+#header_r {
+    width: 66%;
+    height: 100%;
+    /* background-color: #2ff715a5; */
 }
 
 #navbar,
@@ -45,28 +64,24 @@ body {
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
-#menu2 li,
-#menu2 a {
+#header_r li {
     list-style: none;
-    text-decoration: none;
-    display: inline-block;
+    align-self: center;
+}
+
+#header_r a {
     font-family: 'Pathway Gothic One', sans-serif;
-}
-
-#menu2 a {
-    height: 80px;
-    width: 100%;
-    display: flex;
-    align-items: center;
+    text-decoration: none;
     color: #92255C;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 900;
+    margin: 0 11px;
 }
 
-#menu2 a:hover {
+#header_r a:hover {
     text-decoration: underline;
 }
 
@@ -74,8 +89,7 @@ body {
 
 #hello {
     font-family: 'Noto Sans JP', sans-serif;
-    font-size: 110px;
-    /* font-size: 10vw; */
+    font-size: 100px;
     display: inline-block;
     line-height: 120px;
     background-image: linear-gradient(to left, #8d2985, #ed008d);
@@ -96,7 +110,7 @@ body {
 /*=========== RODAPÉ ===========*/
 
 #footer {
-    width: 450px;
+    width: 410px;
     display: flex;
     justify-content: space-between;
     position: fixed;
@@ -115,7 +129,7 @@ body {
     font-weight: 900;
     font-family: arial, sans-serif;
     padding: 10px 20px;
-    letter-spacing: 3px;
+    letter-spacing: 1px;
 }
 
 #btn2 {
@@ -198,13 +212,17 @@ body {
 }
 
 @media (max-width: 550px) {
+    #fundotop{
+        visibility: hidden;
+    }
+
     #header {
         background-color: #ffd9da;
         height: 50px;
         box-shadow: #50505080 0 2px 10px;
     }
 
-    #menu1 img {
+    #header_l img {
         width: 100px;
         height: 25px;
         margin-top: 12px;
@@ -212,7 +230,7 @@ body {
         left: 15px;
     }
 
-    #menu2 {
+    #header_r {
         visibility: hidden;
     }
 
@@ -221,6 +239,7 @@ body {
         position: fixed;
         top: 10px;
         right: 10px;
+        z-index: 1;
     }
 
     #rosquinha {
