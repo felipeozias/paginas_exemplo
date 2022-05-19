@@ -129,6 +129,8 @@ body {
 #follow {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif, sans-serif;
+    color: white;
+    text-decoration: none;
     font-weight: normal;
 }
 
@@ -167,16 +169,16 @@ body {
 
     #footer {
         width: 100vw;
-        height: 94px;
+        height: 95px;
         right: initial;
         top: initial;
-        bottom: 0;
+        bottom: 5px;
         justify-content: center;
     }
 
     #btn1 {
         height: 47px;
-        width: 230px;
+        width: 240px;
         position: absolute;
     }
 
@@ -187,7 +189,7 @@ body {
 
     #btn2 {
         height: 47px;
-        width: 230px;
+        width: 240px;
         position: absolute;
         bottom: 0;
         left: auto;
@@ -196,6 +198,24 @@ body {
 }
 
 @media (max-width: 550px) {
+    #header {
+        background-color: #ffd9da;
+        height: 50px;
+        box-shadow: #50505080 0 2px 10px;
+    }
+
+    #menu1 img {
+        width: 100px;
+        height: 25px;
+        margin-top: 12px;
+        position: fixed;
+        left: 15px;
+    }
+
+    #menu2 {
+        visibility: hidden;
+    }
+
     #flexmenu {
         visibility: visible;
         position: fixed;
@@ -203,17 +223,7 @@ body {
         right: 10px;
     }
 
-    #menu1 {
-        position: fixed;
-        left: 30%;
-        /* left: calc(70% - 212px); */
-    }
-
-    #menu2 {
-        visibility: hidden;
-    }
-
-    #rosquinha{
+    #rosquinha {
         top: 35vh;
     }
 }
