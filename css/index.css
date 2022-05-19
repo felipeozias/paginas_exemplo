@@ -12,6 +12,9 @@ body {
 }
 
 /*=========== CABEÇALHO ===========*/
+#flexmenu {
+    visibility: hidden;
+}
 
 #header {
     display: flex;
@@ -63,39 +66,42 @@ body {
     font-weight: 900;
 }
 
+#menu2 a:hover {
+    text-decoration: underline;
+}
+
 /*=========== CORPO ===========*/
 
 #hello {
-    background-image: linear-gradient(to left, #8d2985, #ed008d);
+    font-family: 'Noto Sans JP', sans-serif;
     font-size: 110px;
+    /* font-size: 10vw; */
     display: inline-block;
     line-height: 120px;
-    font-family: 'Noto Sans JP', sans-serif;
+    background-image: linear-gradient(to left, #8d2985, #ed008d);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     position: fixed;
     top: 40vh;
-    left: 42vw;
+    right: 24vw;
 }
 
-#rosquinha{
+#rosquinha {
     width: 40vw;
-    min-width: 400px;
+    min-width: 557px;
     position: fixed;
     top: 25vh;
-    /* bottom: 30vh; */
 }
 
 /*=========== RODAPÉ ===========*/
 
 #footer {
-    /* background-color: #00ffff48; */
     width: 450px;
-    position: fixed;
-    left: 43vw;
-    top: 80vh;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    right: 24vw;
+    top: 80vh;
 }
 
 #btn1 {
@@ -120,7 +126,7 @@ body {
     align-items: center;
 }
 
-#title {
+#follow {
     font-size: 20px;
     font-family: 'Times New Roman', Times, serif, sans-serif;
     font-weight: normal;
@@ -129,4 +135,85 @@ body {
 #btn2 img {
     width: 30px;
     margin-right: 5px;
+}
+
+/*=========== RESPONSIVIDADE ===========*/
+@media (max-width: 950px) {
+    #hello {
+        -webkit-text-stroke: 5px #FFF;
+    }
+
+    #footer {
+        top: initial;
+        bottom: 20px;
+    }
+}
+
+@media (max-width: 620px) {
+    #hello {
+        font-size: 50px;
+        text-align: center;
+        line-height: 70px;
+        top: 9vh;
+        width: 100%;
+        left: 0;
+        -webkit-text-stroke: 0;
+    }
+
+    #rosquinha {
+        width: 90vw;
+        min-width: 250px;
+    }
+
+    #footer {
+        width: 100vw;
+        height: 94px;
+        right: initial;
+        top: initial;
+        bottom: 0;
+        justify-content: center;
+    }
+
+    #btn1 {
+        height: 47px;
+        width: 230px;
+        position: absolute;
+    }
+
+    #btn1 a {
+        width: 100%;
+        text-align: center;
+    }
+
+    #btn2 {
+        height: 47px;
+        width: 230px;
+        position: absolute;
+        bottom: 0;
+        left: auto;
+        right: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    #flexmenu {
+        visibility: visible;
+        position: fixed;
+        top: 10px;
+        right: 10px;
+    }
+
+    #menu1 {
+        position: fixed;
+        left: 30%;
+        /* left: calc(70% - 212px); */
+    }
+
+    #menu2 {
+        visibility: hidden;
+    }
+
+    #rosquinha{
+        top: 35vh;
+    }
 }
