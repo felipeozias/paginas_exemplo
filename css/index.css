@@ -283,7 +283,7 @@ body {
         display: block;
         visibility: visible;
         width: 85vw;
-        background-color: #3E8914;
+        background-image: linear-gradient(to top, #68c0a8,#3e8574);
         position: fixed;
         left: -100vw;
         top: 50px;
