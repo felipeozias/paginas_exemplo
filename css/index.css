@@ -29,8 +29,14 @@ body {
 }
 
 /*=========== CABEÇALHO ===========*/
+#menucheck {
+    visibility: hidden;
+}
+
 #flexmenu {
     visibility: hidden;
+    width: 30px;
+    height: 30px;
 }
 
 #header {
@@ -214,6 +220,7 @@ body {
 @media (max-width: 550px) {
 
     #hello {
+        z-index: 0;
         font-size: 50px;
         text-align: center;
         line-height: 70px;
@@ -256,11 +263,76 @@ body {
     }
 
     #rosquinha {
+        z-index: 0;
         top: 30vh;
         transition: all .5s;
     }
 
     #header_r {
         width: 0;
+    }
+
+    #footer {
+        z-index: 0;
+    }
+
+    /* --------------------- */
+
+    #navbar ul {
+        z-index: 1;
+        display: block;
+        visibility: visible;
+        width: 85vw;
+        background-color: #3E8914;
+        position: fixed;
+        left: -100vw;
+        top: 50px;
+        transition: all .5s;
+    }
+
+    #navbar li {
+        display: flex;
+    }
+
+    #navbar a {
+        width: 100%;
+        height: 30px;
+        color: white;
+        margin: 0;
+        text-align: center;
+        letter-spacing: 1px;
+        border: solid 1px rgba(255, 255, 255, 0.05);
+    }
+
+    #navbar a:hover {
+        text-decoration: none;
+        background-color: #ffffff4d;
+    }
+
+    #menucheck:checked~#ulmenu {
+        left: 0;
+        transition: all .5s;
+        /* visibility: visible; */
+        /* background-color: red; */
+    }
+}
+
+/* ---- Retira o delay da transição ---- */
+@media (max-width: 500px) {
+
+    #hello {
+        transition: none;
+    }
+
+    #rosquinha {
+        transition: none;
+    }
+
+    #header_l img {
+        transition: none;
+    }
+
+    #header {
+        transition: none;
     }
 }
